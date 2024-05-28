@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Prata&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  body, input, textarea, select, button {
+    line-height: 1.5;
+  }
+  
+  /* Remove form element styles */
+  input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+.hole{
+    border-width: 100vh;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.prata{
+    font-family: prata;
+}
+
+.lato{
+    font-family: lato;
+}
+
+h1{
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+body {
+    width:100vw;
+    overflow: hidden;
+}
+html {
+    width: 100vw;
+    scroll-behavior: smooth;
+  }
+
+.outerstContainer{
+    overflow:hidden;
+    width:100vw;
+}
+
+.scroll-container {
+    overflow-y: auto;
+    
+    scroll-snap-type: y none;
+    height: 100vh;
+}
+
+
+
+.scroll-item {
+    scroll-snap-align: start;
+   /*  height: 100vh; */
+}
+
+.aspect-video17{
+    aspect-ratio: 17 / 9;
+}
+
+.slider-container {
+  padding: 0px;
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+ /*  top: 50%;
+  transform: translateY(-50%); */
+}
+
+/* Set the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Set the color of the scrollbar thumb and track */
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+}
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+/* Set the radius of the scrollbar corners */
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 5px;
+}
+body {
+  overflow-x: hidden;
+}
+
